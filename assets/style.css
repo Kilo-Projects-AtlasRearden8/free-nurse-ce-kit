@@ -1,0 +1,289 @@
+/* Free Nurse CE Kit — shared print styles (Asdale Dynamics, LLC)
+   Large-print friendly: large base font, high contrast, generous writing space.
+   Each HTML page embeds a copy of this CSS so it prints standalone. */
+
+/* ---------- Base ---------- */
+html {
+  line-height: 1.6;
+}
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  color: #111827;
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+.page {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+/* ---------- Typography ---------- */
+h1 {
+  font-size: 26px;
+  margin: 0 0 8px 0;
+  color: #0f172a;
+  border-bottom: 3px solid #0f172a;
+  padding-bottom: 6px;
+}
+h2 {
+  font-size: 20px;
+  margin: 24px 0 10px 0;
+  color: #111827;
+}
+h3 {
+  font-size: 17px;
+  margin: 18px 0 8px 0;
+  color: #374151;
+}
+p, li {
+  font-size: 16px;
+}
+.small {
+  font-size: 14px;
+  color: #4b5563;
+}
+.kicker {
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 6px;
+}
+
+/* ---------- Header card ---------- */
+.header-card {
+  border: 2px solid #111827;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  background: #fafafa;
+}
+.header-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.field label {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #374151;
+}
+.field input {
+  font-size: 17px;
+  padding: 6px 8px;
+  border: 1px solid #111827;
+  border-radius: 4px;
+  background: #ffffff;
+}
+.field input:focus {
+  outline: 3px solid #2563eb;
+}
+
+/* ---------- Disclaimer ---------- */
+.disclaimer {
+  border: 1px solid #b45309;
+  background: #fffbeb;
+  padding: 12px 16px;
+  margin: 16px 0 24px 0;
+  font-size: 15px;
+}
+.disclaimer b {
+  color: #92400e;
+}
+
+/* ---------- Tables ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 24px 0;
+  font-size: 15px;
+}
+th, td {
+  border: 1px solid #111827;
+  padding: 12px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+th {
+  background: #e5e7eb;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #111827;
+}
+tr.blank td {
+  height: 64px; /* generous handwriting space */
+}
+
+/* ---------- Fillable inputs ---------- */
+input.fill, select.fill, textarea.fill {
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #111827;
+  border-radius: 4px;
+  padding: 6px 8px;
+  background: #ffffff;
+}
+input.fill:focus, select.fill:focus, textarea.fill:focus {
+  outline: 3px solid #2563eb;
+}
+textarea.fill {
+  font-family: inherit;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+/* ---------- Checklist ---------- */
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 24px 0;
+}
+.checklist li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  padding: 10px 4px;
+  border-bottom: 1px solid #e5e7eb;
+}
+.checklist li:last-child {
+  border-bottom: none;
+}
+.checkbox {
+  width: 26px;
+  height: 26px;
+  border: 2px solid #111827;
+  border-radius: 6px;
+  background: #ffffff;
+  flex-shrink: 0;
+}
+
+/* ---------- Calendar grid ---------- */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 12px 0 24px 0;
+}
+.month-card {
+  border: 2px solid #111827;
+  border-radius: 8px;
+  padding: 12px 14px;
+  background: #ffffff;
+}
+.month-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 17px;
+  border-bottom: 2px solid #111827;
+  padding-bottom: 6px;
+}
+
+/* ---------- Reflection ---------- */
+.reflect {
+  border: 1px solid #111827;
+  padding: 16px 20px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+.reflect h3 {
+  margin-top: 0;
+}
+
+/* ---------- Totals / summary ---------- */
+.summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin: 20px 0 24px 0;
+}
+.summary .box {
+  border: 2px solid #111827;
+  padding: 14px 16px;
+  background: #ffffff;
+}
+.summary .box .value {
+  font-size: 26px;
+  font-weight: 800;
+  color: #0f172a;
+}
+.summary .box .label {
+  font-size: 13px;
+  color: #4b5563;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* ---------- Print ---------- */
+@media print {
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 16px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .page {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+  .no-print, .noprint, button, .actions, .toolbar {
+    display: none !important;
+  }
+  .field input {
+    background: #ffffff !important;
+    border: 1px solid #000000 !important;
+    color: #000000 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .field input:focus {
+    outline: none !important;
+  }
+  tr.blank td {
+    height: 70px;
+  }
+  .checkbox {
+    border: 2px solid #000000 !important;
+    background: #ffffff !important;
+  }
+  h1, h2, h3, th, td, .month-card, .reflect, .disclaimer, .header-card, .summary .box {
+    border-color: #000000 !important;
+    color: #000000 !important;
+    background: #ffffff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  h1 { border-bottom-color: #000000 !important; }
+  .month-card h3 { border-bottom-color: #000000 !important; }
+  th { background: #dddddd !important; }
+  .header-card { background: #eeeeee !important; }
+  .reflect { background: #eeeeee !important; }
+  .disclaimer { background: #fffff0 !important; border-color: #000000 !important; }
+  .kicker { color: #333333 !important; }
+  .small { color: #333333 !important; }
+  .summary .box .value { color: #000000 !important; }
+  .summary .box .label { color: #333333 !important; }
+  /* avoid stranded rows */
+  table, .month-card, .reflect, .disclaimer, .header-card {
+    page-break-inside: avoid;
+  }
+  tr { page-break-inside: avoid; }
+}

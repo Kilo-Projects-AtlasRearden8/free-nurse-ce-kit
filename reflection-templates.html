@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reflection Templates — Free Nurse CE Kit — Asdale Dynamics, LLC</title>
+<style>
+/* Free Nurse CE Kit — shared print styles (Asdale Dynamics, LLC)
+   Large-print friendly: large base font, high contrast, generous writing space.
+   Each HTML page embeds a copy of this CSS so it prints standalone. */
+/* ---------- Base ---------- */
+html {
+  line-height: 1.6;
+}
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  color: #111827;
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+.page {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+/* ---------- Typography ---------- */
+h1 {
+  font-size: 26px;
+  margin: 0 0 8px 0;
+  color: #0f172a;
+  border-bottom: 3px solid #0f172a;
+  padding-bottom: 6px;
+}
+h2 {
+  font-size: 20px;
+  margin: 24px 0 10px 0;
+  color: #111827;
+}
+h3 {
+  font-size: 17px;
+  margin: 18px 0 8px 0;
+  color: #374151;
+}
+p, li {
+  font-size: 16px;
+}
+.small {
+  font-size: 14px;
+  color: #4b5563;
+}
+.kicker {
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 6px;
+}
+/* ---------- Header card ---------- */
+.header-card {
+  border: 2px solid #111827;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  background: #fafafa;
+}
+.header-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.field label {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #374151;
+}
+.field input {
+  font-size: 17px;
+  padding: 6px 8px;
+  border: 1px solid #111827;
+  border-radius: 4px;
+  background: #ffffff;
+}
+.field input:focus {
+  outline: 3px solid #2563eb;
+}
+/* ---------- Disclaimer ---------- */
+.disclaimer {
+  border: 1px solid #b45309;
+  background: #fffbeb;
+  padding: 12px 16px;
+  margin: 16px 0 24px 0;
+  font-size: 15px;
+}
+.disclaimer b {
+  color: #92400e;
+}
+/* ---------- Checklist ---------- */
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 24px 0;
+}
+.checklist li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  padding: 10px 4px;
+  border-bottom: 1px solid #e5e7eb;
+}
+.checklist li:last-child {
+  border-bottom: none;
+}
+.checkbox {
+  width: 26px;
+  height: 26px;
+  border: 2px solid #111827;
+  border-radius: 6px;
+  background: #ffffff;
+  flex-shrink: 0;
+}
+/* ---------- Calendar grid ---------- */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 12px 0 24px 0;
+}
+.month-card {
+  border: 2px solid #111827;
+  border-radius: 8px;
+  padding: 12px 14px;
+  background: #ffffff;
+}
+.month-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 17px;
+  border-bottom: 2px solid #111827;
+  padding-bottom: 6px;
+}
+/* ---------- Reflection ---------- */
+.reflect {
+  border: 1px solid #111827;
+  padding: 16px 20px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  background: #fafafa;
+  page-break-inside: avoid;
+}
+.reflect h3 {
+  margin-top: 0;
+}
+.reflect .meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+  margin-bottom: 14px;
+}
+.reflect p.prompt {
+  font-weight: 700;
+  margin: 14px 0 6px 0;
+  font-size: 16px;
+}
+.reflect p.prompt span.num {
+  color: #b45309;
+}
+/* ---------- Totals / summary ---------- */
+.summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin: 20px 0 24px 0;
+}
+.summary .box {
+  border: 2px solid #111827;
+  padding: 14px 16px;
+  background: #ffffff;
+}
+.summary .box .value {
+  font-size: 26px;
+  font-weight: 800;
+  color: #0f172a;
+}
+.summary .box .label {
+  font-size: 13px;
+  color: #4b5563;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+/* ---------- Print ---------- */
+@media print {
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 16px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .page {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+  .no-print, .noprint, button, .actions, .toolbar {
+    display: none !important;
+  }
+  .field input {
+    background: #ffffff !important;
+    border: 1px solid #000000 !important;
+    color: #000000 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .field input:focus {
+    outline: none !important;
+  }
+  textarea.fill {
+    border: 1px solid #000000 !important;
+    color: #000000 !important;
+    background: #ffffff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    height: 110px !important;
+  }
+  .checkbox {
+    border: 2px solid #000000 !important;
+    background: #ffffff !important;
+  }
+  h1, h2, h3, th, td, .month-card, .reflect, .disclaimer, .header-card, .summary .box {
+    border-color: #000000 !important;
+    color: #000000 !important;
+    background: #ffffff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  h1 { border-bottom-color: #000000 !important; }
+  .month-card h3 { border-bottom-color: #000000 !important; }
+  .header-card { background: #eeeeee !important; }
+  .reflect { background: #eeeeee !important; }
+  .disclaimer { background: #fffff0 !important; border-color: #000000 !important; }
+  .kicker { color: #333333 !important; }
+  .small { color: #333333 !important; }
+  .summary .box .value { color: #000000 !important; }
+  .summary .box .label { color: #333333 !important; }
+  table, .month-card, .reflect, .disclaimer, .header-card {
+    page-break-inside: avoid;
+  }
+  tr { page-break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<p class="kicker">Free Nurse CE Kit &bull; Asdale Dynamics, LLC</p>
+<h1>CE Reflection Templates</h1>
+
+<div class="disclaimer">
+<b>Education only.</b> These templates are for personal continuing-education reflection and recordkeeping. They are not medical advice, nursing advice, or licensure guidance. Reflection is optional and is not a substitute for your state board of nursing requirements.
+</div>
+
+<div class="header-card">
+<div class="header-grid">
+<div class="field"><label>Your name</label><input type="text" class="fill" placeholder="Full name"></div>
+<div class="field"><label>License number</label><input type="text" class="fill" placeholder="RN license #"></div>
+<div class="field"><label>State / board</label><input type="text" class="fill" placeholder="e.g. Indiana"></div>
+<div class="field"><label>Reporting period</label><input type="text" class="fill" placeholder="e.g. Jan 2026 - Dec 2027"></div>
+</div>
+</div>
+
+<h2>How to use</h2>
+<p>Print one copy of the per-course template for each completed CE course. The quarterly and annual templates help you spot patterns before renewal. Fill in on screen or by hand, then file with your course log and certificates.</p>
+
+<!-- Template 1: per-course reflection -->
+<div class="reflect">
+<h3>Template 1 &mdash; Per-course reflection (print one per course)</h3>
+<div class="meta">
+<div class="field"><label>Course / activity title</label><input type="text" class="fill"></div>
+<div class="field"><label>Provider</label><input type="text" class="fill"></div>
+<div class="field"><label>Date completed</label><input type="text" class="fill"></div>
+<div class="field"><label>CE hours</label><input type="text" class="fill"></div>
+<div class="field"><label>Category</label><input type="text" class="fill"></div>
+</div>
+<p class="prompt"><span class="num">1.</span> What did I learn? (key takeaways)</p>
+<textarea class="fill" rows="4" placeholder="Write what stood out, what was new, what surprised you..."></textarea>
+<p class="prompt"><span class="num">2.</span> What will I change in my practice?</p>
+<textarea class="fill" rows="4" placeholder="One concrete thing I will do differently with patients or teammates..."></textarea>
+<p class="prompt"><span class="num">3.</span> What questions do I still have?</p>
+<textarea class="fill" rows="3" placeholder="Topics to look up, people to ask, courses to take next..."></textarea>
+<p class="prompt"><span class="num">4.</span> Would I recommend this course to a coworker? Why or why not?</p>
+<textarea class="fill" rows="3" placeholder=""></textarea>
+</div>
+
+<!-- Template 2: quarterly reflection -->
+<div class="reflect">
+<h3>Template 2 &mdash; Quarterly CE reflection</h3>
+<div class="meta">
+<div class="field"><label>Quarter</label><input type="text" class="fill" placeholder="Q1 / Q2 / Q3 / Q4"></div>
+<div class="field"><label>Year</label><input type="text" class="fill" placeholder="2026"></div>
+<div class="field"><label>Hours completed this quarter</label><input type="text" class="fill"></div>
+<div class="field"><label>Hours remaining for period</label><input type="text" class="fill"></div>
+</div>
+<p class="prompt"><span class="num">1.</span> Which course was most useful this quarter, and why?</p>
+<textarea class="fill" rows="3" placeholder=""></textarea>
+<p class="prompt"><span class="num">2.</span> What did I apply at work already?</p>
+<textarea class="fill" rows="3" placeholder=""></textarea>
+<p class="prompt"><span class="num">3.</span> What is still on my to-learn list?</p>
+<textarea class="fill" rows="3" placeholder=""></textarea>
+<p class="prompt"><span class="num">4.</span> Am I on track to meet my renewal CE requirement?</p>
+<div class="field"><label>Yes / No / Partially</label><input type="text" class="fill"></div>
+<p class="prompt"><span class="num">5.</span> What will I do next quarter?</p>
+<textarea class="fill" rows="3" placeholder=""></textarea>
+</div>
+
+<!-- Template 3: annual / renewal reflection -->
+<div class="reflect">
+<h3>Template 3 &mdash; Annual / renewal-cycle reflection</h3>
+<div class="meta">
+<div class="field"><label>Renewal cycle / year</label><input type="text" class="fill" placeholder="e.g. 2024 - 2026"></div>
+<div class="field"><label>Total CE hours completed</label><input type="text" class="fill"></div>
+<div class="field"><label>License renewed?</label><input type="text" class="fill" placeholder="Yes / No / Date"></div>
+</div>
+<p class="prompt"><span class="num">1.</span> What was the most valuable thing I learned this cycle?</p>
+<textarea class="fill" rows="3" placeholder=""></textarea>
+<p class="prompt"><span class="num">2.</span> How did my CE choices affect my practice or patients?</p>
+<textarea class="fill" rows="3" placeholder=""></textarea>
+<p class="prompt"><span class="num">3.</span> Which providers or formats worked best for me?</p>
+<textarea class="fill" rows="3" placeholder=""></textarea>
+<p class="prompt"><span class="num">4.</span> What would I do differently next cycle?</p>
+<textarea class="fill" rows="3" placeholder=""></textarea>
+<p class="prompt"><span class="num">5.</span> Notes for my next renewal (deadlines, categories, providers to try)</p>
+<textarea class="fill" rows="4" placeholder=""></textarea>
+</div>
+
+<p class="small">Print one copy of Template 1 per course. Large-print friendly: 16 pt+ body text and wide ruled answer areas.</p>
+
+<p class="small no-print">© 2026 Asdale Dynamics, LLC — Free Nurse CE Kit. Education only, not medical advice.</p>
+
+</div>
+</body>
+</html>

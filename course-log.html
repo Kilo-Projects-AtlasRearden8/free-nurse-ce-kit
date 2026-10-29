@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course Log — Free Nurse CE Kit — Asdale Dynamics, LLC</title>
+<style>
+/* Free Nurse CE Kit — shared print styles (Asdale Dynamics, LLC)
+   Large-print friendly: large base font, high contrast, generous writing space.
+   Each HTML page embeds a copy of this CSS so it prints standalone. */
+/* ---------- Base ---------- */
+html {
+  line-height: 1.6;
+}
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  color: #111827;
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+.page {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+/* ---------- Typography ---------- */
+h1 {
+  font-size: 26px;
+  margin: 0 0 8px 0;
+  color: #0f172a;
+  border-bottom: 3px solid #0f172a;
+  padding-bottom: 6px;
+}
+h2 {
+  font-size: 20px;
+  margin: 24px 0 10px 0;
+  color: #111827;
+}
+h3 {
+  font-size: 17px;
+  margin: 18px 0 8px 0;
+  color: #374151;
+}
+p, li {
+  font-size: 16px;
+}
+.small {
+  font-size: 14px;
+  color: #4b5563;
+}
+.kicker {
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 6px;
+}
+/* ---------- Header card ---------- */
+.header-card {
+  border: 2px solid #111827;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  background: #fafafa;
+}
+.header-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.field label {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #374151;
+}
+.field input {
+  font-size: 17px;
+  padding: 6px 8px;
+  border: 1px solid #111827;
+  border-radius: 4px;
+  background: #ffffff;
+}
+.field input:focus {
+  outline: 3px solid #2563eb;
+}
+/* ---------- Disclaimer ---------- */
+.disclaimer {
+  border: 1px solid #b45309;
+  background: #fffbeb;
+  padding: 12px 16px;
+  margin: 16px 0 24px 0;
+  font-size: 15px;
+}
+.disclaimer b {
+  color: #92400e;
+}
+/* ---------- Tables ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 24px 0;
+  font-size: 15px;
+}
+th, td {
+  border: 1px solid #111827;
+  padding: 12px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+th {
+  background: #e5e7eb;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #111827;
+}
+tr.blank td {
+  height: 64px;
+}
+/* ---------- Fillable inputs ---------- */
+input.fill, select.fill, textarea.fill {
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #111827;
+  border-radius: 4px;
+  padding: 6px 8px;
+  background: #ffffff;
+}
+input.fill:focus, select.fill:focus, textarea.fill:focus {
+  outline: 3px solid #2563eb;
+}
+textarea.fill {
+  font-family: inherit;
+  line-height: 1.5;
+  resize: vertical;
+}
+/* ---------- Checklist ---------- */
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 24px 0;
+}
+.checklist li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  padding: 10px 4px;
+  border-bottom: 1px solid #e5e7eb;
+}
+.checklist li:last-child {
+  border-bottom: none;
+}
+.checkbox {
+  width: 26px;
+  height: 26px;
+  border: 2px solid #111827;
+  border-radius: 6px;
+  background: #ffffff;
+  flex-shrink: 0;
+}
+/* ---------- Calendar grid ---------- */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 12px 0 24px 0;
+}
+.month-card {
+  border: 2px solid #111827;
+  border-radius: 8px;
+  padding: 12px 14px;
+  background: #ffffff;
+}
+.month-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 17px;
+  border-bottom: 2px solid #111827;
+  padding-bottom: 6px;
+}
+/* ---------- Reflection ---------- */
+.reflect {
+  border: 1px solid #111827;
+  padding: 16px 20px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+.reflect h3 {
+  margin-top: 0;
+}
+/* ---------- Totals / summary ---------- */
+.summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin: 20px 0 24px 0;
+}
+.summary .box {
+  border: 2px solid #111827;
+  padding: 14px 16px;
+  background: #ffffff;
+}
+.summary .box .value {
+  font-size: 26px;
+  font-weight: 800;
+  color: #0f172a;
+}
+.summary .box .label {
+  font-size: 13px;
+  color: #4b5563;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+/* ---------- Print ---------- */
+@media print {
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 16px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .page {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+  .no-print, .noprint, button, .actions, .toolbar {
+    display: none !important;
+  }
+  .field input {
+    background: #ffffff !important;
+    border: 1px solid #000000 !important;
+    color: #000000 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .field input:focus {
+    outline: none !important;
+  }
+  tr.blank td {
+    height: 70px;
+  }
+  .checkbox {
+    border: 2px solid #000000 !important;
+    background: #ffffff !important;
+  }
+  h1, h2, h3, th, td, .month-card, .reflect, .disclaimer, .header-card, .summary .box {
+    border-color: #000000 !important;
+    color: #000000 !important;
+    background: #ffffff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  h1 { border-bottom-color: #000000 !important; }
+  .month-card h3 { border-bottom-color: #000000 !important; }
+  th { background: #dddddd !important; }
+  .header-card { background: #eeeeee !important; }
+  .reflect { background: #eeeeee !important; }
+  .disclaimer { background: #fffff0 !important; border-color: #000000 !important; }
+  .kicker { color: #333333 !important; }
+  .small { color: #333333 !important; }
+  .summary .box .value { color: #000000 !important; }
+  .summary .box .label { color: #333333 !important; }
+  table, .month-card, .reflect, .disclaimer, .header-card {
+    page-break-inside: avoid;
+  }
+  tr { page-break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<p class="kicker">Free Nurse CE Kit &bull; Asdale Dynamics, LLC</p>
+<h1>Course Log</h1>
+
+<div class="disclaimer">
+<b>Education only.</b> This log is for personal continuing-education recordkeeping. It is not medical advice, nursing advice, or licensure guidance. CE hour categories, renewal deadlines, and documentation rules vary by state — always confirm requirements with your state board of nursing and employer.
+</div>
+
+<div class="header-card">
+<div class="header-grid">
+<div class="field"><label>Your name</label><input type="text" class="fill" placeholder="Full name"></div>
+<div class="field"><label>License number</label><input type="text" class="fill" placeholder="RN license #"></div>
+<div class="field"><label>State / board</label><input type="text" class="fill" placeholder="e.g. Indiana"></div>
+<div class="field"><label>Reporting period</label><input type="text" class="fill" placeholder="e.g. Jan 2026 - Dec 2027"></div>
+<div class="field"><label>Total CE hours needed</label><input type="text" class="fill" placeholder="e.g. 30"></div>
+<div class="field"><label>Course log page</label><input type="text" class="fill" placeholder="Page __ of __"></div>
+</div>
+</div>
+
+<h2>Instructions</h2>
+<ol>
+<li>Use one row per completed course or activity.</li>
+<li>Record the certificate number and keep the certificate in your CE folder.</li>
+<li>Save course URLs or access info in case you need to re-download a certificate.</li>
+<li>Pair each course with a reflection template (`reflection-templates.html`) and file them together.</li>
+</ol>
+
+<h2>Course &amp; activity detail log</h2>
+<table>
+<thead>
+<tr>
+<th style="width:4%">#</th>
+<th style="width:16%">Course / activity title</th>
+<th style="width:14%">Provider</th>
+<th style="width:12%">Instructor / presenter</th>
+<th style="width:12%">Date completed</th>
+<th style="width:8%">CE hours</th>
+<th style="width:12%">Category</th>
+<th style="width:10%">Cost</th>
+<th style="width:10%">Certificate #</th>
+<th style="width:12%">URL / access info</th>
+<th>Application notes</th>
+</tr>
+</thead>
+<tbody id="course-rows">
+<tr class="blank"><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><textarea class="fill" rows="1"></textarea></td></tr>
+<tr class="blank"><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><textarea class="fill" rows="1"></textarea></td></tr>
+<tr class="blank"><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><textarea class="fill" rows="1"></textarea></td></tr>
+<tr class="blank"><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><textarea class="fill" rows="1"></textarea></td></tr>
+<tr class="blank"><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><textarea class="fill" rows="1"></textarea></td></tr>
+<tr class="blank"><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><textarea class="fill" rows="1"></textarea></td></tr>
+<tr class="blank"><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><textarea class="fill" rows="1"></textarea></td></tr>
+<tr class="blank"><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><textarea class="fill" rows="1"></textarea></td></tr>
+<tr class="blank"><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><textarea class="fill" rows="1"></textarea></td></tr>
+<tr class="blank"><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><textarea class="fill" rows="1"></textarea></td></tr>
+<tr class="blank"><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><textarea class="fill" rows="1"></textarea></td></tr>
+<tr class="blank"><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><textarea class="fill" rows="1"></textarea></td></tr>
+<tr class="blank"><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><textarea class="fill" rows="1"></textarea></td></tr>
+<tr class="blank"><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><input type="text" class="fill"></td><td><textarea class="fill" rows="1"></textarea></td></tr>
+</tbody>
+</table>
+
+<h2>Cost summary</h2>
+<div class="summary">
+<div class="box"><div class="value" id="total-cost">$0.00</div><div class="label">Total course cost</div></div>
+<div class="box"><div class="value" id="total-hours">0</div><div class="label">Total hours logged</div></div>
+</div>
+
+<p class="small">Tip: print blank to fill in by hand, or type on screen then print. Large-print friendly: 16 pt+ body text and wide ruled rows.</p>
+
+<p class="small no-print">© 2026 Asdale Dynamics, LLC — Free Nurse CE Kit. Education only, not medical advice.</p>
+
+</div>
+<script>
+(function () {
+  function sum() {
+    var rows = document.querySelectorAll('#course-rows tr');
+    var totalHours = 0, totalCost = 0;
+    rows.forEach(function (row) {
+      var cells = row.querySelectorAll('td');
+      if (cells.length < 8) return;
+      var hours = parseFloat(cells[5].querySelector('input').value) || 0;
+      var cost = parseFloat((cells[7].querySelector('input').value || '').replace(/[^0-9.-]/g, '')) || 0;
+      totalHours += hours;
+      totalCost += cost;
+    });
+    document.getElementById('total-hours').textContent = totalHours;
+    document.getElementById('total-cost').textContent = totalCost.toFixed(2);
+  }
+  document.querySelectorAll('#course-rows input').forEach(function (el) {
+    el.addEventListener('input', sum);
+  });
+  sum();
+})();
+</script>
+</body>
+</html>

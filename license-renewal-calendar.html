@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>License Renewal Calendar — Free Nurse CE Kit — Asdale Dynamics, LLC</title>
+<style>
+/* Free Nurse CE Kit — shared print styles (Asdale Dynamics, LLC)
+   Large-print friendly: large base font, high contrast, generous writing space.
+   Each HTML page embeds a copy of this CSS so it prints standalone. */
+/* ---------- Base ---------- */
+html {
+  line-height: 1.6;
+}
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  color: #111827;
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+.page {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+/* ---------- Typography ---------- */
+h1 {
+  font-size: 26px;
+  margin: 0 0 8px 0;
+  color: #0f172a;
+  border-bottom: 3px solid #0f172a;
+  padding-bottom: 6px;
+}
+h2 {
+  font-size: 20px;
+  margin: 24px 0 10px 0;
+  color: #111827;
+}
+h3 {
+  font-size: 17px;
+  margin: 18px 0 8px 0;
+  color: #374151;
+}
+p, li {
+  font-size: 16px;
+}
+.small {
+  font-size: 14px;
+  color: #4b5563;
+}
+.kicker {
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 6px;
+}
+/* ---------- Header card ---------- */
+.header-card {
+  border: 2px solid #111827;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  background: #fafafa;
+}
+.header-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.field label {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #374151;
+}
+.field input {
+  font-size: 17px;
+  padding: 6px 8px;
+  border: 1px solid #111827;
+  border-radius: 4px;
+  background: #ffffff;
+}
+.field input:focus {
+  outline: 3px solid #2563eb;
+}
+/* ---------- Disclaimer ---------- */
+.disclaimer {
+  border: 1px solid #b45309;
+  background: #fffbeb;
+  padding: 12px 16px;
+  margin: 16px 0 24px 0;
+  font-size: 15px;
+}
+.disclaimer b {
+  color: #92400e;
+}
+/* ---------- Checklist ---------- */
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 24px 0;
+}
+.checklist li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  padding: 10px 4px;
+  border-bottom: 1px solid #e5e7eb;
+}
+.checklist li:last-child {
+  border-bottom: none;
+}
+.checkbox {
+  width: 26px;
+  height: 26px;
+  border: 2px solid #111827;
+  border-radius: 6px;
+  background: #ffffff;
+  flex-shrink: 0;
+}
+/* ---------- Calendar grid ---------- */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 12px 0 24px 0;
+}
+.month-card {
+  border: 2px solid #111827;
+  border-radius: 8px;
+  padding: 12px 14px;
+  background: #ffffff;
+  page-break-inside: avoid;
+}
+.month-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 17px;
+  border-bottom: 2px solid #111827;
+  padding-bottom: 6px;
+}
+.month-focus {
+  font-size: 14px;
+  color: #4b5563;
+  margin: 8px 0 4px 0;
+}
+.month-focus input {
+  font-size: 15px;
+  padding: 4px 6px;
+  border: 1px solid #111827;
+  border-radius: 4px;
+  background: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* ---------- Reflection ---------- */
+.reflect {
+  border: 1px solid #111827;
+  padding: 16px 20px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+.reflect h3 {
+  margin-top: 0;
+}
+/* ---------- Totals / summary ---------- */
+.summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin: 20px 0 24px 0;
+}
+.summary .box {
+  border: 2px solid #111827;
+  padding: 14px 16px;
+  background: #ffffff;
+}
+.summary .box .value {
+  font-size: 26px;
+  font-weight: 800;
+  color: #0f172a;
+}
+.summary .box .label {
+  font-size: 13px;
+  color: #4b5563;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+/* ---------- Print ---------- */
+@media print {
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 16px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .page {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+  .no-print, .noprint, button, .actions, .toolbar {
+    display: none !important;
+  }
+  .field input {
+    background: #ffffff !important;
+    border: 1px solid #000000 !important;
+    color: #000000 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .field input:focus {
+    outline: none !important;
+  }
+  .month-focus input {
+    border: 1px solid #000000 !important;
+    color: #000000 !important;
+    background: #ffffff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .field input:focus {
+    outline: none !important;
+  }
+  .checkbox {
+    border: 2px solid #000000 !important;
+    background: #ffffff !important;
+  }
+  h1, h2, h3, th, td, .month-card, .reflect, .disclaimer, .header-card, .summary .box {
+    border-color: #000000 !important;
+    color: #000000 !important;
+    background: #ffffff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  h1 { border-bottom-color: #000000 !important; }
+  .month-card h3 { border-bottom-color: #000000 !important; }
+  .header-card { background: #eeeeee !important; }
+  .reflect { background: #eeeeee !important; }
+  .disclaimer { background: #fffff0 !important; border-color: #000000 !important; }
+  .kicker { color: #333333 !important; }
+  .small { color: #333333 !important; }
+  .summary .box .value { color: #000000 !important; }
+  .summary .box .label { color: #333333 !important; }
+  table, .month-card, .reflect, .disclaimer, .header-card {
+    page-break-inside: avoid;
+  }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<p class="kicker">Free Nurse CE Kit &bull; Asdale Dynamics, LLC</p>
+<h1>License Renewal Calendar</h1>
+
+<div class="disclaimer">
+<b>Education only.</b> This calendar is for personal renewal planning. It is not medical advice, nursing advice, or licensure guidance. Renewal deadlines, grace periods, CE categories, and fees vary by state — always confirm dates and requirements with your state board of nursing.
+</div>
+
+<div class="header-card">
+<div class="header-grid">
+<div class="field"><label>Your name</label><input type="text" class="fill" placeholder="Full name"></div>
+<div class="field"><label>License number</label><input type="text" class="fill" placeholder="RN license #"></div>
+<div class="field"><label>State / board</label><input type="text" class="fill" placeholder="e.g. Indiana"></div>
+<div class="field"><label>License expires</label><input type="text" class="fill" placeholder="MM/DD/YYYY"></div>
+<div class="field"><label>Renewal application due</label><input type="text" class="fill" placeholder="MM/DD/YYYY"></div>
+<div class="field"><label>Grace period ends</label><input type="text" class="fill" placeholder="MM/DD/YYYY"></div>
+<div class="field"><label>CE hours due</label><input type="text" class="fill" placeholder="e.g. 30"></div>
+<div class="field"><label>Renewal fee</label><input type="text" class="fill" placeholder="$0.00"></div>
+</div>
+</div>
+
+<h2>How to use</h2>
+<ol>
+<li>Fill in your license details in the card above.</li>
+<li>Work the checklist for each month. Mark boxes when done.</li>
+<li>Use the renewal month card for submission steps; start early so nothing is late.</li>
+<li>File the printed calendar with your CE tracker and certificates.</li>
+</ol>
+
+<h2>12-month renewal planner</h2>
+<div class="calendar">
+<div class="month-card">
+<h3>January</h3>
+<div class="month-focus">This month's focus: <input type="text" class="fill" placeholder="e.g. review CE requirements"></div>
+<ul class="checklist">
+<li><span class="checkbox"></span> Review this year's CE hour requirements</li>
+<li><span class="checkbox"></span> Check hours completed vs. hours needed</li>
+<li><span class="checkbox"></span> Register for any needed courses</li>
+<li><span class="checkbox"></span> File new certificates</li>
+</ul>
+</div>
+<div class="month-card">
+<h3>February</h3>
+<div class="month-focus">This month's focus: <input type="text" class="fill" placeholder=""></div>
+<ul class="checklist">
+<li><span class="checkbox"></span> Continue CE coursework</li>
+<li><span class="checkbox"></span> Track hours in CE tracker</li>
+<li><span class="checkbox"></span> File new certificates</li>
+<li><span class="checkbox"></span> Confirm in-person/webinar dates</li>
+</ul>
+</div>
+<div class="month-card">
+<h3>March</h3>
+<div class="month-focus">This month's focus: <input type="text" class="fill" placeholder=""></div>
+<ul class="checklist">
+<li><span class="checkbox"></span> Mid-year CE progress check</li>
+<li><span class="checkbox"></span> Complete outstanding courses</li>
+<li><span class="checkbox"></span> File new certificates</li>
+<li><span class="checkbox"></span> Update CE tracker totals</li>
+</ul>
+</div>
+<div class="month-card">
+<h3>April</h3>
+<div class="month-focus">This month's focus: <input type="text" class="fill" placeholder=""></div>
+<ul class="checklist">
+<li><span class="checkbox"></span> Complete remaining coursework</li>
+<li><span class="checkbox"></span> File new certificates</li>
+<li><span class="checkbox"></span> Update CE tracker totals</li>
+<li><span class="checkbox"></span> Note any category gaps</li>
+</ul>
+</div>
+<div class="month-card">
+<h3>May</h3>
+<div class="month-focus">This month's focus: <input type="text" class="fill" placeholder=""></div>
+<ul class="checklist">
+<li><span class="checkbox"></span> Finish all CE hours</li>
+<li><span class="checkbox"></span> Verify every certificate is filed</li>
+<li><span class="checkbox"></span> Start renewal application draft</li>
+<li><span class="checkbox"></span> Confirm license expiration date</li>
+</ul>
+</div>
+<div class="month-card">
+<h3>June</h3>
+<div class="month-focus">This month's focus: <input type="text" class="fill" placeholder=""></div>
+<ul class="checklist">
+<li><span class="checkbox"></span> Finalize renewal application</li>
+<li><span class="checkbox"></span> Gather supporting documents</li>
+<li><span class="checkbox"></span> Calculate total renewal cost</li>
+<li><span class="checkbox"></span> Schedule submission date</li>
+</ul>
+</div>
+<div class="month-card">
+<h3>July</h3>
+<div class="month-focus">This month's focus: <input type="text" class="fill" placeholder=""></div>
+<ul class="checklist">
+<li><span class="checkbox"></span> Submit renewal application</li>
+<li><span class="checkbox"></span> Pay renewal fee</li>
+<li><span class="checkbox"></span> Save submission confirmation</li>
+<li><span class="checkbox"></span> Set reminder to check status</li>
+</ul>
+</div>
+<div class="month-card">
+<h3>August</h3>
+<div class="month-focus">This month's focus: <input type="text" class="fill" placeholder=""></div>
+<ul class="checklist">
+<li><span class="checkbox"></span> Check renewal application status</li>
+<li><span class="checkbox"></span> Respond to any board requests</li>
+<li><span class="checkbox"></span> Save renewed license document</li>
+<li><span class="checkbox"></span> Update license expiration date</li>
+</ul>
+</div>
+<div class="month-card">
+<h3>September</h3>
+<div class="month-focus">This month's focus: <input type="text" class="fill" placeholder=""></div>
+<ul class="checklist">
+<li><span class="checkbox"></span> Confirm renewed license on file with employer</li>
+<li><span class="checkbox"></span> Start next reporting period CE log</li>
+<li><span class="checkbox"></span> File this year's renewal calendar</li>
+<li><span class="checkbox"></span> Note next year's expiration</li>
+</ul>
+</div>
+<div class="month-card">
+<h3>October</h3>
+<div class="month-focus">This month's focus: <input type="text" class="fill" placeholder=""></div>
+<ul class="checklist">
+<li><span class="checkbox"></span> Register for upcoming courses</li>
+<li><span class="checkbox"></span> Track new CE hours</li>
+<li><span class="checkbox"></span> File new certificates</li>
+<li><span class="checkbox"></span> Check for board rule changes</li>
+</ul>
+</div>
+<div class="month-card">
+<h3>November</h3>
+<div class="month-focus">This month's focus: <input type="text" class="fill" placeholder=""></div>
+<ul class="checklist">
+<li><span class="checkbox"></span> Complete scheduled coursework</li>
+<li><span class="checkbox"></span> File new certificates</li>
+<li><span class="checkbox"></span> Update CE tracker totals</li>
+<li><span class="checkbox"></span> Review hours remaining</li>
+</ul>
+</div>
+<div class="month-card">
+<h3>December</h3>
+<div class="month-focus">This month's focus: <input type="text" class="fill" placeholder=""></div>
+<ul class="checklist">
+<li><span class="checkbox"></span> Finish all CE hours for the period</li>
+<li><span class="checkbox"></span> Verify all certificates filed</li>
+<li><span class="checkbox"></span> Confirm totals meet requirements</li>
+<li><span class="checkbox"></span> Prepare next year's calendar</li>
+</ul>
+</div>
+</div>
+
+<h2>Renewal submission checklist</h2>
+<ul class="checklist">
+<li><span class="checkbox"></span> Renewal application completed and signed</li>
+<li><span class="checkbox"></span> CE hours total meets state requirement</li>
+<li><span class="checkbox"></span> Category-specific hours (e.g. pharmacology) met</li>
+<li><span class="checkbox"></span> Copies of all certificates attached</li>
+<li><span class="checkbox"></span> Renewal fee paid</li>
+<li><span class="checkbox"></span> Submission confirmation saved</li>
+<li><span class="checkbox"></span> Renewed license received and on file</li>
+</ul>
+
+<p class="small">Renewal month tip: if your license expires in a specific month, shift the "Renewal submission checklist" into that month's card and start 60-90 days early.</p>
+
+<p class="small no-print">© 2026 Asdale Dynamics, LLC — Free Nurse CE Kit. Education only, not medical advice.</p>
+
+</div>
+</body>
+</html>
